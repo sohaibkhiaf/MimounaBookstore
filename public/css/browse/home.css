@@ -1,0 +1,163 @@
+.header .header-2 .navigation-bar .header-home{
+    border-bottom: .2rem solid #fff;
+}
+
+.bottom-navigation .bottom-navigation-home{
+    border-bottom: .4rem solid #fff;
+}
+
+/* home */
+.home{
+    background: url(../../images/banner-bg.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 3rem 4%;
+}
+
+.home .row{
+    display: flex;
+    align-items: center;
+    flex-wrap:  wrap;
+    gap: 1rem;
+}
+
+.home .row .content{
+    flex: 1 1 42rem;
+}
+
+.home .row .bookshelf-slider{
+    flex: 1 1 42rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+
+.home .row .bookshelf-slider a img{
+    height: 20rem;
+}
+
+.home .row .bookshelf-slider a:hover img{
+    transform: scale(.9);
+}
+
+.home .row .bookshelf-slider .bookshelf{
+    width: 100%;
+}
+
+.home .row .content h3{
+    color: var(--black);
+    font-size: 3.6rem;
+}
+
+
+.home .row .content p{
+    color: var(--black);
+    font-size: 1.8rem;
+    line-height: 2;
+    padding: 1rem 0;
+}
+
+.home .row .content .btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .5rem 3rem;
+    border-radius: .7rem;
+    color: #fff;
+    background: var(--apple);
+    font-size: 1.8rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.home .row .content .btn:hover{
+    background: var(--dark-apple);
+}
+
+/* icons */
+.icons-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(25rem , 1fr));
+    gap: 1rem;
+    padding: 3rem 4%;
+}
+
+.icons-container .icons{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem 0;
+}
+
+.icons-container .icons i{
+    font-size: 3rem;
+    color: var(--apple);
+}
+
+
+.icons-container .icons h3{
+    font-size: 2.2rem;
+    color: var(--black);
+    padding-bottom: .5rem;
+}
+
+.icons-container .icons p{
+    font-size: 1.8rem;
+    color: var(--light-black);
+}
+
+/* books sections */
+.bestsellers, .novels, .newly-added{
+    padding: 3rem 4%;
+}
+
+.bestsellers h1, .novels h1, .newly-added h1{
+    margin-bottom: 2rem;
+}
+
+.bestsellers h1 span, .novels h1 span, .newly-added h1 span{
+    font-size: 3rem;
+    padding: .5rem 2rem;
+    color: var(--black);
+    background: #fff;
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+    border: var(--border-hover);
+    height: 4rem;
+    width: 4rem;
+    color: var(--black);
+    background: #fff;
+    border-radius: .4rem;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after{
+    font-size: 2rem;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover{
+    background: var(--black);
+    color: #fff;
+}
+
+/* media queries */
+
+@media (max-width:991px){
+
+    section{
+        padding: 3rem 2rem;
+    }
+}
+
+@media (max-width:768px){
+
+    .home .row .content{
+        text-align: center;
+    }
+}
+
+@media (max-width:450px){
+
+}

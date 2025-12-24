@@ -1,0 +1,94 @@
+.form-container{
+    background: #fff;
+    border: var(--border);
+    width: 80rem;
+    padding: 2rem;
+    box-sizing: var(--box-shadow);
+    border-radius: .7rem;
+}
+
+.form-container form h3{
+    font-size: 2.6rem;
+    color: var(--black);
+    text-align: center;
+}
+
+.form-container form span{
+    display: block;
+    font-size: 1.8rem;
+    padding-top: 1rem;
+}
+
+.form-container form .box{
+    width: 100%;
+    font-size: 1.8rem;
+    border: var(--border);
+    border-radius: .7rem;
+    padding: 1rem 1.2rem;
+    color: var(--black);
+    text-transform: none;
+}
+
+.form-container form .error{
+    color: var(--apple);
+    font-size: 1.6rem;
+}
+
+.form-container form .shipping{
+    margin-top: 2rem;
+}
+
+.form-container form .shipping label{
+    font-size: 1.8rem;
+    color: var(--black);
+}
+
+.form-container form .shipping input{
+    background-color: var(--apple);
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: .5rem;
+}
+
+.form-container form .buttons-container{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.form-container form .buttons-container .edit-button{
+    flex: 50%;
+    display: inline-block;
+    padding: .5rem 3rem;
+    border-radius: .7rem;
+    color: #fff;
+    background: var(--apple);
+    font-size: 1.8rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.form-container form .buttons-container .edit-button:hover{
+    background: var(--dark-apple);
+}
+
+.form-container form .buttons-container .cancel-button{
+    flex: 50%;
+    background-color: #fff;
+    border: var(--border);
+    color: var(--black);
+    display: inline-block;
+    padding: .5rem 3rem;
+    border-radius: .7rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.form-container form .buttons-container .cancel-button:hover{
+    background-color: #dfdfdf;
+} 

@@ -1,0 +1,62 @@
+.reset-password-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 4%;
+}
+
+
+.reset-password-container .reset-password{
+    background: #fff;
+    border: var(--border);
+    width: 80rem;
+    padding: 3.5rem;
+    box-sizing: var(--box-shadow);
+    border-radius: .7rem;
+}
+
+
+.reset-password-container .reset-password form h3{
+    font-size: 2.6rem;
+    color: var(--black);
+    text-align: center;
+}
+
+.reset-password-container .reset-password form span{
+    display: block;
+    font-size: 1.8rem;
+    padding-top: 1rem;
+}
+
+.reset-password-container .reset-password form .box{
+    width: 100%;
+    font-size: 1.8rem;
+    border: var(--border);
+    border-radius: .7rem;
+    padding: 1rem 1.2rem;
+    color: var(--black);
+    text-transform: none;
+}
+
+.reset-password-container .reset-password form .error{
+    color: var(--apple);
+    font-size: 1.6rem;
+}
+
+.reset-password-container .reset-password form .reset-button{
+    text-align: center;
+    width: 100%;
+    margin-top: 3rem;
+    display: inline-block;
+    padding: .5rem 3rem;
+    border-radius: .7rem;
+    color: #fff;
+    background: var(--apple);
+    font-size: 1.8rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.reset-password-container .reset-password form .reset-button:hover{
+    background: var(--dark-apple);
+}

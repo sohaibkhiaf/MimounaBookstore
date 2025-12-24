@@ -1,0 +1,121 @@
+.header .header-2 .navigation-bar .header-shop{
+    border-bottom: .2rem solid #fff;
+}
+
+.bottom-navigation .bottom-navigation-shop{
+    border-bottom: .4rem solid #fff;
+}
+
+.details {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 3rem 4%;
+}
+
+/* reviews */
+
+.reviews{
+    padding: 3rem 4%;
+}
+
+.reviews h1{
+    margin-bottom: 2rem;
+}
+
+.reviews h1 span{
+    font-size: 3rem;
+    padding: .5rem 2rem;
+    color: var(--black);
+    background: #fff;
+}
+
+.reviews .top-reviews{
+    margin-bottom: 2rem;
+}
+
+.reviews .more i{
+    font-size: 1.8rem;
+    color: var(--apple);
+}
+
+.reviews .more a{
+    font-size: 2rem;
+    color: var(--apple);
+}
+
+.reviews .more a:hover{
+    text-decoration: underline;
+}
+
+/* no reviews message */
+
+.reviews .top-reviews .no-reviews{
+    font-size: 2.5rem;
+    color: var(--black);
+    text-align: center;
+}
+
+.reviews .top-reviews .no-reviews i{
+    font-size: 8rem;
+    margin-bottom: 2rem;
+}
+
+/* related */
+
+.related{
+    padding: 3rem 4%;
+}
+
+.related h1{
+    margin-bottom: 2rem;
+}
+
+.related h1 span{
+    font-size: 3rem;
+    padding: .5rem 2rem;
+    color: var(--black);
+    background: #fff;
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+    border: var(--border-hover);
+    height: 4rem;
+    width: 4rem;
+    color: var(--black);
+    background: #fff;
+    border-radius: .4rem;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after{
+    font-size: 2rem;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover{
+    background: var(--black);
+    color: #fff;
+}
+
+/* media queries */
+
+@media (max-width:991px){
+
+    section{
+        padding: 3rem 2rem;
+    }
+
+}
+
+
+@media (max-width:768px){
+
+}
+
+
+@media (max-width:450px){
+
+}

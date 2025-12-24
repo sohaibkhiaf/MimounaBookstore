@@ -1,0 +1,137 @@
+
+.book-container{
+    display: flex;
+    width: 100%;
+}
+
+.book-container .book-picture{
+    flex: 50%;
+    padding: 1rem;
+}
+
+.book-container .book-details{
+    flex: 50%;
+    padding: 1rem;
+}
+
+/* book image */
+
+.book-container .book-picture .book-image-container{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 40rem;
+    margin-bottom: .5rem;
+    border: var(--border);
+    box-sizing: var(--box-shadow);
+    border-radius: .7rem;
+}
+
+.book-container .book-picture .book-image-container img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.book-container .book-picture .book-image-container .book-like{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    margin: 1.5rem;
+}
+
+.book-container .book-picture .book-image-container .book-like a{
+    color: var(--black);
+    font-size: 2.8rem;
+    cursor: pointer;
+}
+
+.book-container .book-picture .book-image-container .book-like .number-of-likes{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.book-container .book-picture .book-image-container .book-like a:hover,
+.book-container .book-picture .book-image-container .book-like a.active{
+    color: var(--apple);
+}
+
+/* book details */
+
+.book-container .book-details .book-genre{
+    font-size: 1.7rem;
+    color: var(--light-black);
+}
+
+.book-container .book-details .book-title{
+    font-size: 2.6rem;
+    color: var(--black);
+}
+
+.book-container .book-details .book-price{
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.book-container .book-details .book-price .book-discount{
+    font-size: 1.7rem;
+    color: var(--light-black);
+    text-decoration: line-through;
+}
+
+.book-container .book-details .book-availability{
+    font-size: 2rem;
+}
+
+.book-container .book-details div .book-quantity{
+    padding: .4rem 1rem;
+    border-radius: .7rem;
+    font-size: 1.8rem;
+    text-align: center;
+    border: .1rem solid var(--black);
+    font-weight: 500;
+    display: none;
+}
+
+.book-container .book-details div .add-to-cart{
+    padding: .5rem 2rem;
+    display: inline-block;
+    border-radius: .7rem;
+    color: #fff;
+    background: var(--apple);
+    font-size: 1.8rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.book-container .book-details div .add-to-cart:hover{
+    background: var(--dark-apple);
+}
+
+.book-container .book-details .book-description,
+.book-container .book-details .book-author{
+    font-size: 1.8rem;
+    color: var(--black);
+    margin-top: 1rem;
+}
+
+/* media queries */
+
+@media (max-width:991px){
+
+}
+
+
+@media (max-width:768px){
+
+    .details .book-container {
+        display: block;
+    }
+
+}
+
+
+@media (max-width:450px){
+
+}
+

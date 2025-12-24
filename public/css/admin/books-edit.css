@@ -1,0 +1,16 @@
+.header .header-2 .navigation-bar .header-books{
+    border-bottom: .2rem solid #fff;
+}
+
+.bottom-navigation .bottom-navigation-books{
+    border-bottom: .4rem solid #fff;
+}
+
+/* edit book */ 
+
+.edit-book{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 4%;
+}

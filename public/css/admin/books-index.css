@@ -1,0 +1,153 @@
+.header .header-2 .navigation-bar .header-books{
+    border-bottom: .2rem solid #fff;
+}
+
+.bottom-navigation .bottom-navigation-books{
+    border-bottom: .4rem solid #fff;
+}
+
+.books{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem 4%; 
+}
+
+.books .aside{
+    flex: 25%;
+}
+
+.books .main{
+    flex: 75%;
+}
+
+/* aside */
+
+.books .aside .aside-container h3{
+    font-size: 2.4rem;
+    color: var(--black);
+}
+
+.books .aside .aside-container a{
+    color: var(--black);
+    font-size: 1.8rem;
+    width: 100%;
+    padding: .7rem;
+    display: block;
+    margin: .4rem 0;
+}
+
+.books .aside .aside-container a i{
+    color: var(--black);
+}
+
+.books .aside .aside-container a:hover {
+    background: #eee;
+    border-radius: .7rem;
+}
+
+.books .aside .aside-container a.active {
+    color: #fff;
+    background: var(--apple);
+    border-radius: .7rem;
+}
+
+.books .aside .aside-container a.active i{
+    color: #fff;
+}
+
+.books .aside .aside-container .edit-genre-button i,
+.books .aside .aside-container .delete-genre-button i{
+    font-size: 1.6rem;
+}
+
+/* main */
+
+.books .main .book-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(20rem , .25fr));
+    gap: 1rem;
+}
+
+/* navigator */
+.books .main .navigator-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    padding: 3rem 4%; 
+}
+
+.books .main .navigator-container a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex: 0 0 4rem;
+    font-size: 2rem;
+    border: var(--border-hover);
+    height: 4rem;
+    width: 4rem;
+    color: var(--black);
+    background: #fff;
+    border-radius: .4rem;
+}
+
+.books .main .navigator-container a:hover{
+    background: var(--black);
+    color: #fff;
+}
+
+.books .main .navigator-container a.active{
+    background: var(--black);
+    color: #fff;
+}
+
+/* no results message */
+.books .main .navigator-container .no-results{
+    font-size: 2.5rem;
+    color: var(--black);
+    text-align: center;
+}
+
+.books .main .navigator-container .no-results i{
+    font-size: 8rem;
+    margin-bottom: 2rem;
+}
+
+/* media queries */
+
+@media (max-width:991px){
+
+    section{
+        padding: 3rem 2rem;
+    }
+
+}
+
+
+@media (max-width:768px){
+
+    .books .aside{
+        display: none;
+    }
+    
+    .books .main{
+        flex: 100%;
+    }
+
+    .books .main .book-container{
+        grid-template-columns: repeat(auto-fit , minmax(20rem, .5fr));
+    }
+
+}
+
+
+@media (max-width:450px){
+
+}

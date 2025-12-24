@@ -1,0 +1,73 @@
+.forgot{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 4%;
+}
+
+.forgot .form-container{
+    background: #fff;
+    border: var(--border);
+    width: 80rem;
+    padding: 2rem;
+    box-sizing: var(--box-shadow);
+    border-radius: .7rem;
+}
+
+.forgot .form-container form h3{
+    font-size: 2.6rem;
+    color: var(--black);
+    text-align: center;
+}
+
+.forgot .form-container form span{
+    display: block;
+    font-size: 1.8rem;
+    padding-top: 1rem;
+}
+
+.forgot .form-container form .box{
+    width: 100%;
+    font-size: 1.8rem;
+    border: var(--border);
+    border-radius: .7rem;
+    padding: 1rem 1.2rem;
+    color: var(--black);
+    text-transform: none;
+}
+
+.forgot .form-container form .error{
+    color: var(--apple);
+    font-size: 1.6rem;
+}
+
+.forgot .form-container form .reset-button{
+    text-align: center;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    padding: .5rem 3rem;
+    border-radius: .7rem;
+    color: #fff;
+    background: var(--apple);
+    font-size: 1.8rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.forgot .form-container form .reset-button:hover{
+    background: var(--dark-apple);
+}
+
+.forgot .form-container form p{
+    padding-top: .5rem;
+    color: var(--black);
+    font-size: 1.8rem;
+}
+
+.forgot .form-container form p a{
+    color: var(--apple);
+    text-decoration: underline;
+    cursor: pointer;
+}

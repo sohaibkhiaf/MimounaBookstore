@@ -1,0 +1,88 @@
+.header .header-1 .icons .wishlist-icon{
+    color: var(--apple);
+}
+
+.wishlist-books{
+    padding: 3rem 4%; 
+}
+
+.wishlist-books .wishlist-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(20rem , .2fr));
+    gap: 1rem;
+}
+
+/* navigator */
+
+.navigator{
+    padding: 3rem 4%; 
+}
+
+.navigator .navigator-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.navigator .navigator-container a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex: 0 0 4rem;
+    font-size: 2rem;
+    border: var(--border-hover);
+    height: 4rem;
+    width: 4rem;
+    color: var(--black);
+    background: #fff;
+    border-radius: .4rem;
+}
+
+.navigator .navigator-container a:hover{
+    background: var(--black);
+    color: #fff;
+}
+
+.navigator .navigator-container a.active{
+    background: var(--black);
+    color: #fff;
+}
+
+/* no results message */
+
+.navigator .navigator-container .no-results{
+    font-size: 2.5rem;
+    color: var(--black);
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.navigator .navigator-container .no-results i{
+    font-size: 8rem;
+    margin-bottom: 2rem;
+}
+
+/* media queries */
+
+@media (max-width:991px){
+
+    section{
+        padding: 3rem 2rem;
+    }
+}
+
+@media (max-width:768px){
+
+    .wishlist-books .wishlist-container{
+        grid-template-columns: repeat(auto-fit , minmax(20rem, .5fr));
+    }
+}
+
+@media (max-width:450px){
+
+}

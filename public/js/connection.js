@@ -1,0 +1,1 @@
+export const URL = "http://localhost/Laravel_MimounaBookstore/public/";

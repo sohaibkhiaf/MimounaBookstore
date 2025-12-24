@@ -1,0 +1,182 @@
+
+/* orders */
+
+.orders .content-container .processing,
+.orders .content-container .delivering,
+.orders .content-container .delivered,
+.orders .content-container .canceled,
+.orders .content-container .returned{
+    background: #fff;
+    border: var(--border);
+    padding: 1.5rem;
+    box-sizing: var(--box-shadow);
+    border-radius: .7rem;
+}   
+
+.orders .content-container .processing h3,
+.orders .content-container .delivering h3,
+.orders .content-container .delivered h3,
+.orders .content-container .canceled h3,
+.orders .content-container .returned h3{
+    font-size: 2.6rem;
+    color: var(--black);
+    text-align: center;
+}
+
+.orders .content-container .processing table,
+.orders .content-container .processing th,
+.orders .content-container .processing td,
+.orders .content-container .delivering table,
+.orders .content-container .delivering th,
+.orders .content-container .delivering td,
+.orders .content-container .delivered table,
+.orders .content-container .delivered th,
+.orders .content-container .delivered td,
+.orders .content-container .canceled table,
+.orders .content-container .canceled th,
+.orders .content-container .canceled td,
+.orders .content-container .returned table,
+.orders .content-container .returned th,
+.orders .content-container .returned td{
+    border: var(--border);
+    border-collapse: collapse;
+    color: var(--black);
+    font-size: 1.8rem;
+    padding: 1rem;
+}
+
+.orders .content-container .processing th,
+.orders .content-container .delivering th,
+.orders .content-container .delivered th,
+.orders .content-container .canceled th,
+.orders .content-container .returned th{
+    background-color: var(--apple);
+    color: white;
+}
+
+.orders .content-container .processing table tr:nth-child(even),
+.orders .content-container .delivering table tr:nth-child(even),
+.orders .content-container .delivered table tr:nth-child(even),
+.orders .content-container .canceled table tr:nth-child(even),
+.orders .content-container .returned table tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+.orders .content-container .processing td a,
+.orders .content-container .delivering td a,
+.orders .content-container .delivered td a,
+.orders .content-container .canceled td a,
+.orders .content-container .returned td a{
+    color: var(--black);
+}
+
+.orders .content-container .processing td i,
+.orders .content-container .delivering td i,
+.orders .content-container .delivered td i,
+.orders .content-container .canceled td i,
+.orders .content-container .returned td i{
+    cursor: pointer;
+}
+
+.orders .content-container .processing td i.start-delivery,
+.orders .content-container .delivering td i.order-delivered{
+    color: green;
+}
+
+.orders .content-container .processing td i.cancel-order,
+.orders .content-container .delivering td i.order-returned{
+    color: var(--apple);
+}
+
+.orders .content-container .processing table,
+.orders .content-container .delivering table,
+.orders .content-container .delivered table,
+.orders .content-container .canceled table,
+.orders .content-container .returned table{
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.orders .content-container .processing .navigator-container,
+.orders .content-container .delivering .navigator-container,
+.orders .content-container .delivered .navigator-container,
+.orders .content-container .canceled .navigator-container,
+.orders .content-container .returned .navigator-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.orders .content-container .processing .navigator-container a,
+.orders .content-container .delivering .navigator-container a,
+.orders .content-container .delivered .navigator-container a,
+.orders .content-container .canceled .navigator-container a,
+.orders .content-container .returned .navigator-container a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex: 0 0 4rem;
+    font-size: 2rem;
+    border: var(--border-hover);
+    height: 4rem;
+    width: 4rem;
+    color: var(--black);
+    background: #fff;
+    border-radius: .4rem;
+}
+
+.orders .content-container .processing .navigator-container a:hover,
+.orders .content-container .delivering .navigator-container a:hover,
+.orders .content-container .delivered .navigator-container a:hover,
+.orders .content-container .canceled .navigator-container a:hover,
+.orders .content-container .returned .navigator-container a:hover{
+    background: var(--black);
+    color: #fff;
+}
+
+.orders .content-container .processing .navigator-container a.active,
+.orders .content-container .delivering .navigator-container a.active,
+.orders .content-container .delivered .navigator-container a.active,
+.orders .content-container .canceled .navigator-container a.active,
+.orders .content-container .returned .navigator-container a.active{
+    background: var(--black);
+    color: #fff;
+}
+
+/* no orders */
+
+.orders .content-container .processing .no-orders, 
+.orders .content-container .delivering .no-orders, 
+.orders .content-container .delivered .no-orders, 
+.orders .content-container .canceled .no-orders, 
+.orders .content-container .returned .no-orders{
+    font-size: 2.5rem;
+    color: var(--black);
+    text-align: center;
+    margin: 4rem 0;
+}
+
+.orders .content-container .processing .no-orders a,
+.orders .content-container .delivering .no-orders a,
+.orders .content-container .delivered .no-orders a,
+.orders .content-container .canceled .no-orders a,
+.orders .content-container .returned .no-orders a{
+    color: var(--apple);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.orders .content-container .processing .no-orders i,
+.orders .content-container .delivering .no-orders i, 
+.orders .content-container .delivered .no-orders i, 
+.orders .content-container .canceled .no-orders i, 
+.orders .content-container .returned .no-orders i {
+    font-size: 8rem;
+    margin-bottom: 2rem;
+}

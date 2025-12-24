@@ -1,0 +1,132 @@
+.header .header-2 .navigation-bar .header-orders{
+    border-bottom: .2rem solid #fff;
+}
+
+.bottom-navigation .bottom-navigation-orders{
+    border-bottom: .4rem solid #fff;
+}
+
+.details{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 3rem 4%; 
+}
+
+.details .tabs-container{
+    flex: 25%;
+    padding: 1rem;
+}
+
+.details .content-container{
+    flex: 75%;
+    padding: 1rem;
+}
+
+/* tabs container */
+
+.details .tabs-container h3{
+    font-size: 2.4rem;
+    color: var(--black);
+}
+
+.details .tabs-container a{
+    color: var(--black);
+    font-size: 1.8rem;
+    width: 100%;
+    padding: .7rem;
+    display: block;
+    margin: .4rem 0;
+    color: var(--black);
+}
+
+.details .tabs-container a i{
+    color: var(--black);
+}
+
+.details .tabs-container a:hover {
+    background: #eee;
+    border-radius: .7rem;
+}
+
+.details .tabs-container a.active {
+    color: #fff;
+    background: var(--apple);
+    border-radius: .7rem;
+    
+}
+
+.details .tabs-container a.active i{
+    color: #fff;
+}
+
+.details .tabs-container .edit-order-button i,
+.details .tabs-container .delete-order-button i{
+    font-size: 1.6rem;
+}
+
+/* content */
+
+.details .content-container .order-details{
+    background: #fff;
+    border: var(--border);
+    padding: 1.5rem;
+    box-sizing: var(--box-shadow);
+    border-radius: .7rem;
+}   
+
+.details .content-container .order-details h3{
+    font-size: 2.6rem;
+    color: var(--black);
+    text-align: center;
+}
+
+.details .content-container .order-details table,
+.details .content-container .order-details th,
+.details .content-container .order-details td{
+    border: var(--border);
+    border-collapse: collapse;
+    color: var(--black);
+    font-size: 1.8rem;
+    padding: 1rem;
+}
+
+.details .content-container .order-details table th {
+    background-color: var(--apple);
+    color: white;
+}
+
+.details .content-container .order-details table tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+.details .content-container .order-details table{
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* media queries */
+
+@media (max-width:991px){
+
+    section{
+        padding: 3rem 2rem;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .details .content-container, 
+    .details .tabs-container {
+        flex: 100%;
+    }
+
+}
+
+@media (max-width:450px){
+
+}
+

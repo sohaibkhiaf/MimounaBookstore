@@ -1,0 +1,78 @@
+.review-container{
+    overflow: hidden;
+    border: var(--border);
+    border-radius: .7rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* top */
+
+.review-container .top{
+    display: flex;
+    justify-content: start;
+}
+
+.review-container .top .name{
+    font-size: 1.7rem;
+    font-weight: bolder;
+}
+
+.review-container .top .name span{
+    font-size: 1.7rem;
+    font-weight: bolder;
+}
+
+.review-container .top .user-actions{
+    font-size: 1.6rem;
+}
+
+.review-container .top .user-actions a{
+    display: inline;
+    color: var(--black);
+}
+
+.review-container .top .user-actions a:hover{
+    color: var(--apple);
+}
+
+.review-container .top .user-actions .upvote-review:hover{
+    color: green;
+}
+
+.review-container .top .user-actions .upvote-review.active{
+    color: green;
+}
+
+.review-container .top .user-actions form{
+    display: inline;
+}
+
+/* middle */
+
+.review-container .middle .review{
+    font-size: 1.6rem;
+}
+
+/* bottom */
+
+.review-container .bottom .admin-actions{
+    font-size: 1.6rem;
+}
+
+.review-container .bottom .admin-actions a,
+.review-container .bottom .admin-actions form{
+    display: inline;
+}
+
+.review-container .bottom .admin-actions a{
+    color: var(--black);
+}
+
+.review-container .bottom .admin-actions a.active{
+    color: var(--apple);
+}
+
+.review-container .bottom .admin-actions a:hover{
+    color: var(--apple);
+}

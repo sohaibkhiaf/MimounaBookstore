@@ -1,0 +1,154 @@
+.header .header-2 .navigation-bar .header-shop{
+    border-bottom: .2rem solid #fff;
+}
+
+.bottom-navigation .bottom-navigation-shop{
+    border-bottom: .4rem solid #fff;
+}
+
+/* section */
+
+.shop{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem 4%; 
+}
+
+.shop .aside{
+    flex: 25%;
+}
+
+.shop .main{
+    flex: 75%;
+}
+
+/* aside */
+
+.shop .aside .aside-container h3{
+    font-size: 2.4rem;
+    color: var(--black);
+}
+
+.shop .aside .aside-container a{
+    color: var(--black);
+    font-size: 1.8rem;
+    width: 100%;
+    padding: .7rem;
+    display: block;
+    margin: .4rem 0;
+}
+
+.shop .aside .aside-container a i{
+    color: var(--black);
+}
+
+.shop .aside .aside-container a:hover {
+    background: #eee;
+    border-radius: .7rem;
+}
+
+.shop .aside .aside-container a.active {
+    color: #fff;
+    background: var(--apple);
+    border-radius: .7rem;
+}
+
+.shop .aside .aside-container a.active i{
+    color: #fff;
+}
+
+/* main */
+
+.shop .main .book-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(20rem , .25fr));
+    gap: 1rem;
+}
+
+/* navigator */
+.shop .main .navigator-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    padding: 3rem 4%; 
+}
+
+.shop .main .navigator-container a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex: 0 0 4rem;
+    font-size: 2rem;
+    border: var(--border-hover);
+    height: 4rem;
+    width: 4rem;
+    color: var(--black);
+    background: #fff;
+    border-radius: .4rem;
+}
+
+.shop .main .navigator-container a:hover{
+    background: var(--black);
+    color: #fff;
+}
+
+.shop .main .navigator-container a.active{
+    background: var(--black);
+    color: #fff;
+}
+
+/* no results message */
+.shop .main .navigator-container .no-results{
+    font-size: 2.5rem;
+    color: var(--black);
+    text-align: center;
+}
+
+.shop .main .navigator-container .no-results i{
+    font-size: 8rem;
+    margin-bottom: 2rem;
+}
+
+
+/* media queries */
+
+@media (max-width:991px){
+
+    section{
+        padding: 3rem 2rem;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .shop .aside{
+        display: none;
+    }
+    
+    .shop .main{
+        flex: 100%;
+    }
+
+    .phone-genres{
+        display: flex;
+    }
+
+    .shop .main .book-container{
+        grid-template-columns: repeat(auto-fit , minmax(20rem, .5fr));
+    }
+
+}
+
+
+@media (max-width:450px){
+
+}

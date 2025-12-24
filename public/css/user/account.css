@@ -1,0 +1,250 @@
+.account{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 3rem 4%; 
+}
+
+.account .tabs-container{
+    flex: 25%;
+    padding: 1rem;
+}
+
+.account .content-container{
+    flex: 75%;
+    padding: 1rem;
+}
+
+/* tabs container */
+
+.account .tabs-container div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.account .tabs-container div h3{
+    font-size: 2.4rem;
+    color: var(--black);
+}
+
+.account .tabs-container a{
+    color: var(--black);
+    font-size: 1.8rem;
+    width: 100%;
+    padding: .7rem;
+    display: block;
+    margin: .4rem 0;
+}
+
+.account .tabs-container a i{
+    color: var(--black);
+}
+
+.account .tabs-container a:hover {
+    background: #eee;
+    border-radius: .7rem;
+}
+
+.account .tabs-container a.active {
+    color: #fff;
+    background: var(--apple);
+    border-radius: .7rem;
+    
+}
+
+.account .tabs-container a.active i{
+    color: #fff;
+}
+
+/* orders */
+.account .content-container .orders{
+    background: #fff;
+    border: var(--border);
+    padding: 1.5rem;
+    box-sizing: var(--box-shadow);
+    border-radius: .7rem;
+}   
+
+.account .content-container .orders h3{
+    font-size: 2.6rem;
+    color: var(--black);
+    text-align: center;
+}
+
+.account .content-container .orders table,
+.account .content-container .orders th,
+.account .content-container .orders td{
+    border: var(--border);
+    border-collapse: collapse;
+    color: var(--black);
+    font-size: 1.8rem;
+    padding: 1rem;
+}
+
+.account .content-container .orders table th {
+    background-color: var(--apple);
+    color: white;
+}
+
+.account .content-container .orders table tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+.account .content-container .orders td a{
+    color: #222;
+    text-decoration: none;
+}
+
+.account .content-container .orders table{
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* no orders */
+
+.account .content-container .orders .no-orders{
+    font-size: 2.5rem;
+    color: var(--black);
+    text-align: center;
+    margin: 4rem 0;
+}
+
+.account .content-container .orders .no-orders a{
+    color: var(--apple);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.account .content-container .orders .no-orders i{
+    font-size: 8rem;
+    margin-bottom: 2rem;
+}
+
+/* navigator */
+
+.account .content-container .orders .navigator-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.account .content-container .orders .navigator-container a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex: 0 0 4rem;
+    font-size: 2rem;
+    border: var(--border-hover);
+    height: 4rem;
+    width: 4rem;
+    color: var(--black);
+    background: #fff;
+    border-radius: .4rem;
+}
+
+.account .content-container .orders .navigator-container a:hover{
+    background: var(--black);
+    color: #fff;
+}
+
+.account .content-container .orders .navigator-container a.active{
+    background: var(--black);
+    color: #fff;
+}
+
+/* order details */
+
+.account .content-container .order-details{
+    background: #fff;
+    border: var(--border);
+    padding: 1.5rem;
+    box-sizing: var(--box-shadow);
+    border-radius: .7rem;
+}   
+
+.account .content-container .order-details h3{
+    font-size: 2.6rem;
+    color: var(--black);
+    text-align: center;
+}
+
+.account .content-container .order-details table,
+.account .content-container .order-details th,
+.account .content-container .order-details td{
+    border: var(--border);
+    border-collapse: collapse;
+    color: var(--black);
+    font-size: 1.8rem;
+    padding: 1rem;
+}
+
+.account .content-container .order-details table th {
+    background-color: var(--apple);
+    color: white;
+}
+
+.account .content-container .order-details table tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+.account .content-container .order-details table{
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* media queries */
+@media (max-width:991px){
+
+    section{
+        padding: 3rem 2rem;
+    }
+
+}
+
+@media (max-width:768px){
+
+
+    .account .content-container, 
+    .account .tabs-container {
+        flex: 100%;
+    }
+
+    .account .tabs-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .account .tabs-container div{
+        flex: 100%;
+    }
+
+    .account .tabs-container a{
+        display: inline;
+        flex: 25%;
+        text-align: center;
+        height: 9rem;
+    }
+
+    .account .tabs-container a span{
+        display: block;
+    }
+
+}
+
+@media (max-width:450px){
+
+}

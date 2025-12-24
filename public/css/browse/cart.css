@@ -1,0 +1,121 @@
+.header .header-2 .navigation-bar .header-shop{
+    border-bottom: .2rem solid #fff;
+}
+
+.bottom-navigation .bottom-navigation-shop{
+    border-bottom: .4rem solid #fff;
+}
+
+.header .header-1 .icons .cart-icon{
+    color: var(--apple);
+}
+
+.cart {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 3rem 4%; 
+}
+
+.cart .cart-container{
+    flex: 100%;
+    padding: 1rem;
+}
+
+/* cart details */
+
+.cart .cart-container {
+    margin: 1rem 0;
+}   
+
+.cart .cart-container h3{
+    font-size: 2.6rem;
+    color: var(--black);
+    margin-bottom: 2rem;
+}
+
+.cart .cart-container table,
+.cart .cart-container th,
+.cart .cart-container td{
+    border: var(--border);
+    border-collapse: collapse;
+    color: var(--black);
+    font-size: 1.8rem;
+    padding: 1rem;
+}
+
+.cart .cart-container table th {
+    background-color: var(--apple);
+    color: white;
+}
+
+.cart .cart-container table tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+.cart .cart-container td a.register-to-checkout,
+.cart .cart-container td a.login-to-checkout{
+    color: var(--apple);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cart .cart-container td select{
+    font-size: 1.8rem;
+    color: var(--black);
+    border: var(--border);
+    padding: 0 .25rem;
+    border-radius: .5rem;
+}
+
+.cart .cart-container td i{
+    cursor: pointer;
+}
+
+.cart .cart-container td .checkout,
+.cart .cart-container td .edit{
+    padding: .4rem 1.4rem;
+    font-size: 1.7rem;
+    display: inline-block;
+    border-radius: .7rem;
+    color: #fff;
+    background: var(--apple);
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.cart .cart-container td .checkout:hover,
+.cart .cart-container td .edit:hover{
+    background: var(--dark-apple);
+}
+
+.cart .cart-container table{
+    width: 100%;
+    text-align: center;
+}
+
+.cart .cart-container td .shipping-unavailable{
+    color: var(--apple);
+}
+
+/* media queries */
+
+@media (max-width:991px){
+
+    section{
+        padding: 3rem 2rem;
+    }
+
+}
+
+@media (max-width:768px){
+
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+}

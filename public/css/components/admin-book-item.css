@@ -1,0 +1,70 @@
+
+.admin-book-item{
+    position: relative;
+    overflow: hidden;
+    border: var(--border);
+    border-radius: .7rem;
+    text-align: center;
+}
+
+.admin-book-item .image{
+    padding: 1rem 1rem 0 1rem;
+}
+
+.admin-book-item .image img{
+    height: 15rem;
+    width: 15rem;
+    object-fit: contain;
+}
+
+
+.admin-book-item .actions{
+    position: absolute;
+    top: 0; right: 0;
+    z-index: 1;
+}
+
+.admin-book-item .actions a{
+    color: var(--black);
+    font-size: 2rem;
+    padding: 1rem;
+    display: block;
+    cursor: pointer;
+}
+
+.admin-book-item .actions i{
+    color: var(--black);
+    font-size: 2rem;
+    padding: 1rem;
+    display: block;
+    color: var(--apple);
+}
+
+.admin-book-item .actions a:hover,
+.admin-book-item .actions a.active{
+    color: var(--apple);
+}
+
+.admin-book-item .content{
+    padding: 0 1rem 1rem 1rem;
+}
+
+.admin-book-item .content h3{
+    font-size: 2rem;
+    color: var(--black);
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+
+.admin-book-item .content .price{
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.admin-book-item .content .price span{
+    font-size: 1.7rem;
+    color: var(--light-black);
+    text-decoration: line-through;
+}
+

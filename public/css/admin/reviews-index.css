@@ -1,0 +1,110 @@
+.header .header-2 .navigation-bar .header-reviews{
+    border-bottom: .2rem solid #fff;
+}
+
+.bottom-navigation .bottom-navigation-reviews{
+    border-bottom: .4rem solid #fff;
+}
+
+.reviews{
+    padding: 3rem 4%;
+}
+
+/* reviews container */
+
+.reviews .content-container .reviews-container{
+    background: #fff;
+    border: var(--border);
+    padding: 1.5rem;
+    box-sizing: var(--box-shadow);
+    border-radius: .7rem;
+}
+
+
+.reviews .content-container .reviews-container h3{
+    font-size: 2.6rem;
+    color: var(--black);
+    text-align: center;
+    margin-bottom: 2rem
+}
+
+
+
+/* no reviews found */
+
+.reviews .content-container .reviews-container .no-reviews-found{
+    font-size: 2.5rem;
+    color: var(--black);
+    text-align: center;
+    margin: 4rem 0;
+}
+
+.reviews .content-container .reviews-container .no-reviews-found a{
+    color: var(--apple);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.reviews .content-container .reviews-container .no-reviews-found i {
+    font-size: 8rem;
+    margin-bottom: 2rem;
+}
+
+/* navigator */
+
+.reviews .content-container .reviews-container .navigator-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.reviews .content-container .reviews-container .navigator-container a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex: 0 0 4rem;
+    font-size: 2rem;
+    border: var(--border-hover);
+    height: 4rem;
+    width: 4rem;
+    color: var(--black);
+    background: #fff;
+    border-radius: .4rem;
+}
+
+.reviews .content-container .reviews-container .navigator-container a:hover{
+    background: var(--black);
+    color: #fff;
+}
+
+.reviews .content-container .reviews-container .navigator-container a.active{
+    background: var(--black);
+    color: #fff;
+}
+
+
+/* media queries */
+
+@media (max-width:991px){
+
+    section{
+        padding: 3rem 2rem;
+    }
+
+}
+
+@media (max-width:768px){
+
+}
+
+@media (max-width:450px){
+
+}
+
+
+

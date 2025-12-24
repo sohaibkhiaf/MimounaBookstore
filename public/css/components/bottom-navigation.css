@@ -1,0 +1,36 @@
+.bottom-navigation{
+    text-align: center;
+    background: var(--apple);
+    position: fixed;
+    left: 0; right: 0; bottom: 0;
+    z-index: 1000;
+    display: none;
+}
+
+.bottom-navigation a{
+    font-size: 2rem;
+    padding: 2rem 2rem 1.6rem 2rem;
+    color: #fff;
+    border-bottom: .4rem solid var(--apple);
+}
+
+.bottom-navigation a:hover{
+    border-bottom: .4rem solid #fff;
+}
+
+/* media queries */
+@media (max-width:991px){
+
+}
+
+@media (max-width:768px){
+
+    .bottom-navigation{
+        display: block;
+    }
+
+}
+
+@media (max-width:450px){
+
+}

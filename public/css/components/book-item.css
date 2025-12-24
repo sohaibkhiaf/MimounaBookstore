@@ -1,0 +1,78 @@
+
+.book-item{
+    position: relative;
+    overflow: hidden;
+    border: var(--border);
+    border-radius: .7rem;
+    text-align: center;
+}
+
+.book-item:hover{
+    cursor: pointer;
+}
+
+.book-item .image{
+    padding: 1rem 1rem 0 1rem;
+}
+
+.book-item .image img{
+    height: 15rem;
+    width: 15rem;
+    object-fit: contain;
+}
+
+.book-item .like{
+    position: absolute;
+    top: 0; right: 0;
+    z-index: 1;
+}
+
+.book-item .like a{
+    color: var(--black);
+    font-size: 2.2rem;
+    padding: 1.5rem;
+}
+
+.book-item .like a:hover,
+.book-item .like a.active{
+    color: var(--apple);
+}
+
+.book-item .content{
+    padding: 0 1rem 1rem 1rem;
+}
+
+.book-item .content h3{
+    font-size: 2rem;
+    color: var(--black);
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+
+.book-item .content .price{
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.book-item .content .price span{
+    font-size: 1.7rem;
+    color: var(--light-black);
+    text-decoration: line-through;
+}
+
+.book-item .content .add-to-cart{
+    padding: .5rem 2rem;
+    margin-top: .5rem;
+    display: inline-block;
+    border-radius: .7rem;
+    color: #fff;
+    background: var(--apple);
+    font-size: 1.8rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.book-item .content .add-to-cart:hover{
+    background: var(--dark-apple);
+}

@@ -1,0 +1,134 @@
+.dialog{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, .8);
+    position: fixed;
+    top: 0; right: -105%;
+    z-index: 2000;
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+}
+
+.dialog.active{
+    right: 0;
+}
+
+.dialog .dialog-container{
+    background: #fff;
+    border: var(--border);
+    width: 80rem;
+    padding: 3.5rem;
+    box-sizing: var(--box-shadow);
+    border-radius: .7rem;
+    margin: 1rem;
+}
+
+/* logout dialog */
+.dialog .dialog-container .logout-dialog h3{
+    font-size: 2.6rem;
+    color: var(--black);
+    text-align: center;
+}
+
+.dialog .dialog-container .logout-dialog p{
+    padding-top: .5rem;
+    color: var(--black);
+    font-size: 1.8rem;
+}
+
+.dialog .dialog-container .logout-dialog .buttons-container{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0 0 0;
+    text-align: center;
+}
+
+.dialog .dialog-container .logout-dialog .buttons-container button.confirm-logout{
+    flex: 50%;
+    display: inline-block;
+    padding: .5rem 3rem;
+    border-radius: .7rem;
+    color: #fff;
+    background: var(--apple);
+    font-size: 1.8rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.dialog .dialog-container .logout-dialog .buttons-container button.confirm-logout:hover{
+    background: var(--dark-apple);
+}
+
+.dialog .dialog-container .logout-dialog .buttons-container a.cancel-logout{
+    flex: 50%;
+    background-color: #fff;
+    border: var(--border);
+    color: var(--black);
+    text-align: center;
+    display: inline-block;
+    padding: .5rem 3rem;
+    border-radius: .7rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.dialog .dialog-container .logout-dialog .buttons-container a.cancel-logout:hover{
+    background-color: #dfdfdf;
+}
+
+/* language dialog */
+
+.dialog .dialog-container .language-form h3{
+    font-size: 2.6rem;
+    color: var(--black);
+    text-align: center;
+}
+
+.dialog .dialog-container .language-form span{
+    display: block;
+    font-size: 1.8rem;
+    padding-top: 1rem;
+}
+
+.dialog .dialog-container .language-form select{
+    font-size: 1.8rem;
+    background: #eee;
+    border: var(--border);
+    border-radius: .5rem;
+    padding: .7rem;
+    width: 100%;
+}
+
+.dialog .dialog-container .language-form .select-language{
+    text-align: center;
+    width: 100%;
+    margin: 1.5rem 0;
+    display: inline-block;
+    padding: .5rem 3rem;
+    border-radius: .7rem;
+    color: #fff;
+    background: var(--apple);
+    font-size: 1.8rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.dialog .dialog-container .language-form .select-language:hover{
+    background: var(--dark-apple);
+}
+
+/* close button */
+.dialog .close-dialog{
+    position: absolute;
+    top: 1.5rem; right: 2.5rem;
+    font-size: 3rem;
+    color: var(--black);
+    cursor: pointer;
+}
+

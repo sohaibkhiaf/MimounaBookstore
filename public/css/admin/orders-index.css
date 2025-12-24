@@ -1,0 +1,87 @@
+.header .header-2 .navigation-bar .header-orders{
+    border-bottom: .2rem solid #fff;
+}
+
+.bottom-navigation .bottom-navigation-orders{
+    border-bottom: .4rem solid #fff;
+}
+
+/* orders */
+
+.orders{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 3rem 4%; 
+}
+
+.orders .tabs-container{
+    flex: 25%;
+    padding: 1rem;
+}
+
+.orders .content-container{
+    flex: 75%;
+    padding: 1rem;
+}
+
+/* tabs */
+
+.orders .tabs-container h3{
+    font-size: 2.4rem;
+    color: var(--black);
+}
+
+.orders .tabs-container a{
+    color: var(--black);
+    font-size: 1.8rem;
+    width: 100%;
+    padding: .7rem;
+    display: block;
+    margin: .4rem 0;
+    color: var(--black);
+}
+
+.orders .tabs-container a i{
+    color: var(--black);
+}
+
+.orders .tabs-container a:hover{
+    background: #eee;
+    border-radius: .7rem;
+}
+
+.orders .tabs-container a.active {
+    color: #fff;
+    background: var(--apple);
+    border-radius: .7rem;
+    
+}
+
+.orders .tabs-container a.active i{
+    color: #fff;
+}
+
+/* media queries */
+
+@media (max-width:991px){
+
+    section{
+        padding: 3rem 2rem;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .orders .content-container, 
+    .orders .tabs-container {
+        flex: 100%;
+    }
+
+}
+
+@media (max-width:450px){
+
+}
