@@ -1,0 +1,17 @@
+{
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "lint:js": "eslint public/js resources/js"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.0.0",
+        "axios": "^1.6.4",
+        "eslint": "^9.0.0",
+        "globals": "^15.0.0",
+        "laravel-vite-plugin": "^1.0",
+        "vite": "^5.0"
+    }
+}

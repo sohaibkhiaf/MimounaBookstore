@@ -1,0 +1,206 @@
+.header .header-2 .navigation-bar .header-users{
+    border-bottom: .3rem solid #fff;
+}
+
+.bottom-navigation .bottom-navigation-users{
+    border-bottom: .4rem solid #fff;
+}
+
+.users{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 3rem 4%;
+}
+
+.users .tabs-container{
+    flex: 25%;
+    background: #fff;
+    border: var(--border);
+    border-radius: var(--radius-lg);
+    padding: 2rem 1.6rem;
+    box-shadow: var(--box-shadow);
+}
+
+.users .content-container{
+    flex: 75%;
+    padding: 0 1rem;
+}
+
+/* tabs */
+
+.users .tabs-container h3{
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--black);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: var(--border);
+}
+
+.users .tabs-container a{
+    color: var(--black);
+    font-size: 1.75rem;
+    font-weight: 600;
+    width: 100%;
+    padding: .85rem 1.1rem;
+    display: block;
+    margin: .4rem 0;
+    border-radius: var(--radius-md);
+}
+
+.users .tabs-container a i{
+    color: var(--apple);
+}
+
+.users .tabs-container a:hover{
+    background: var(--apple-soft);
+    color: var(--apple);
+}
+
+.users .tabs-container a.active {
+    color: #fff;
+    background: linear-gradient(135deg, var(--dark-apple), var(--apple));
+    border-radius: var(--radius-md);
+    box-shadow: 0 .4rem 1.2rem var(--apple-glow);
+}
+
+.users .tabs-container a.active i{
+    color: #fff;
+}
+
+/* users container */
+
+.users .content-container .users-container{
+    background: #fff;
+    border: var(--border);
+    padding: 2.2rem;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--radius-lg);
+    overflow-x: auto;
+}
+
+.users .content-container .users-container h3{
+    font-size: 2.6rem;
+    color: var(--black);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.users .content-container .users-container table,
+.users .content-container .users-container th,
+.users .content-container .users-container td{
+    border: var(--border);
+    border-collapse: collapse;
+    color: var(--black);
+    font-size: 1.75rem;
+    padding: 1.1rem 1rem;
+}
+
+.users .content-container .users-container table th {
+    background: linear-gradient(135deg, var(--dark-apple), var(--apple));
+    color: white;
+}
+
+.users .content-container .users-container table tr:nth-child(even){
+    background-color: #f8f9fc;
+}
+
+.users .content-container .users-container table tr:hover{
+    background-color: #f1f3f8;
+}
+
+.users .content-container .users-container td i{
+    cursor: pointer;
+    color: var(--apple);
+}
+
+.users .content-container .users-container table{
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+}
+
+/* no users found */
+
+.users .content-container .users-container .no-users-found{
+    font-size: 2.3rem;
+    color: var(--black);
+    text-align: center;
+    margin: 4rem 0;
+}
+
+.users .content-container .users-container .no-users-found a{
+    color: var(--apple);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.users .content-container .users-container .no-users-found i {
+    font-size: 7rem;
+    color: var(--apple);
+    margin-bottom: 1.5rem;
+}
+
+/* navigator */
+
+.users .content-container .users-container .navigator-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: .7rem;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.users .content-container .users-container .navigator-container a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex: 0 0 4.2rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    border: var(--border);
+    height: 4.2rem;
+    width: 4.2rem;
+    color: var(--black);
+    background: #fff;
+    border-radius: var(--radius-md);
+    box-shadow: var(--box-shadow);
+}
+
+.users .content-container .users-container .navigator-container a:hover{
+    background: var(--apple);
+    border-color: var(--apple);
+    color: #fff;
+}
+
+.users .content-container .users-container .navigator-container a.active{
+    background: var(--apple);
+    border-color: var(--apple);
+    color: #fff;
+}
+
+/* media queries */
+
+@media (max-width:991px){
+
+    section{
+        padding: 3rem 2rem;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .users .content-container,
+    .users .tabs-container {
+        flex: 100%;
+        margin-bottom: 1.5rem;
+    }
+}

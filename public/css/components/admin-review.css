@@ -1,0 +1,130 @@
+.admin-review-container{
+    overflow: hidden;
+    background: #fff;
+    border: var(--border);
+    border-radius: var(--radius-md);
+    padding: 1.6rem 2rem;
+    margin-bottom: 1.2rem;
+    box-shadow: var(--box-shadow);
+}
+
+.admin-review-container:hover{
+    border-color: rgba(168, 31, 35, .25);
+    box-shadow: var(--box-shadow-hover);
+}
+
+/* top */
+
+.admin-review-container .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: .8rem;
+    border-bottom: .1rem dashed rgba(0, 0, 0, .08);
+}
+
+.admin-review-container .top .name{
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: .4rem;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--black);
+}
+
+.admin-review-container .top .name span{
+    font-size: 1.55rem;
+    font-weight: 700;
+    color: var(--apple);
+}
+
+/* unified review & admin actions */
+
+.admin-review-container .top .user-actions,
+.admin-review-container .top .admin-actions{
+    display: inline-flex;
+    align-items: center;
+    gap: .65rem;
+    margin: 0;
+    padding: 0;
+}
+
+.admin-review-container .top .user-actions form,
+.admin-review-container .top .admin-actions form{
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.admin-review-container .top .user-actions a,
+.admin-review-container .top .admin-actions a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.4rem;
+    height: 3.4rem;
+    font-size: 1.45rem;
+    line-height: 1;
+    color: var(--light-black);
+    background: var(--surface-alt, #f8fafc);
+    border: .1rem solid rgba(15, 23, 42, .08);
+    border-radius: .85rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color .2s ease, color .2s ease, border-color .2s ease, transform .2s ease;
+}
+
+.admin-review-container .top .user-actions a:hover,
+.admin-review-container .top .admin-actions a:hover{
+    color: var(--apple);
+    background: var(--apple-soft, rgba(168, 31, 35, .1));
+    border-color: rgba(168, 31, 35, .25);
+    transform: translateY(-.15rem);
+}
+
+.admin-review-container .top .admin-actions a.active{
+    color: var(--apple);
+    background: var(--apple-soft, rgba(168, 31, 35, .12));
+    border-color: rgba(168, 31, 35, .3);
+}
+
+.admin-review-container .top .admin-actions a.publish-review:hover,
+.admin-review-container .top .user-actions a.upvote-review:hover{
+    color: #16a34a;
+    background: rgba(22, 163, 74, .1);
+    border-color: rgba(22, 163, 74, .28);
+}
+
+.admin-review-container .top .user-actions a.upvote-review.active{
+    color: #16a34a;
+    background: rgba(22, 163, 74, .12);
+    border-color: rgba(22, 163, 74, .32);
+    font-weight: 700;
+}
+
+.admin-review-container .top .user-actions .number-of-upvotes{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2.2rem;
+    height: 3.4rem;
+    padding: 0 .4rem;
+    font-size: 1.55rem;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--black);
+}
+
+/* middle */
+
+.admin-review-container .middle .review{
+    font-size: 1.65rem;
+    color: var(--black);
+    line-height: 1.7;
+    padding: .4rem 0;
+}

@@ -1,0 +1,217 @@
+.header .header-2 .navigation-bar .header-home{
+    border-bottom: .3rem solid #fff;
+    color: #fff;
+}
+
+.bottom-navigation .bottom-navigation-home{
+    border-bottom: .4rem solid #fff;
+    color: #fff;
+}
+
+/* home */
+.home{
+    background: url(../../images/banner-bg.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 4.5rem 4%;
+    border-bottom: var(--border);
+}
+
+.home .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+
+.home .row .content{
+    flex: 1 1 42rem;
+}
+
+.home .row .bookshelf-slider{
+    flex: 1 1 42rem;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 1.6rem 0;
+    background: transparent;
+}
+
+.home .row .bookshelf-slider .swiper-wrapper{
+    align-items: center;
+    background: transparent;
+}
+
+.home .row .bookshelf-slider a.swiper-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+}
+
+.home .row .bookshelf-slider a img{
+    height: 22rem;
+    border-radius: .4rem;
+    transition: transform .3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.home .row .bookshelf-slider a:hover img{
+    transform: translateY(-.8rem) scale(1.04);
+}
+
+.home .row .content h3{
+    color: var(--black);
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1.25;
+}
+
+.home .row .content p{
+    color: var(--light-black);
+    font-size: 1.85rem;
+    line-height: 1.9;
+    padding: 1.2rem 0;
+}
+
+.home .row .content .btn{
+    margin-top: 1.2rem;
+    display: inline-block;
+    padding: .9rem 3.4rem;
+    border-radius: 5rem;
+    color: #fff;
+    background: linear-gradient(135deg, var(--dark-apple), var(--apple));
+    font-size: 1.85rem;
+    cursor: pointer;
+    font-weight: 700;
+    box-shadow: 0 .6rem 1.8rem var(--apple-glow);
+}
+
+.home .row .content .btn:hover{
+    background: var(--dark-apple);
+    transform: translateY(-.3rem);
+    box-shadow: 0 1rem 2.4rem var(--apple-glow);
+}
+
+/* icons */
+.icons-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(24rem , 1fr));
+    gap: 1.8rem;
+    padding: 3.5rem 4%;
+}
+
+.icons-container .icons{
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    padding: 2rem 2.2rem;
+    background: #fff;
+    border: var(--border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--box-shadow);
+}
+
+.icons-container .icons:hover{
+    transform: translateY(-.4rem);
+    box-shadow: var(--box-shadow-hover);
+    border-color: rgba(168, 31, 35, .28);
+}
+
+.icons-container .icons i{
+    font-size: 2.6rem;
+    color: var(--apple);
+    width: 5.6rem;
+    height: 5.6rem;
+    border-radius: 50%;
+    background: var(--apple-soft);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.icons-container .icons:hover i{
+    background: var(--apple);
+    color: #fff;
+    transform: scale(1.08);
+}
+
+.icons-container .icons h3{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--black);
+    padding-bottom: .3rem;
+}
+
+.icons-container .icons p{
+    font-size: 1.6rem;
+    color: var(--light-black);
+}
+
+/* books sections */
+.bestsellers, .novels, .newly-added{
+    padding: 2.5rem 4%;
+}
+
+.bestsellers .book-slider,
+.novels .book-slider,
+.newly-added .book-slider{
+    padding: 1rem .4rem 1.6rem .4rem;
+}
+
+.bestsellers h1, .novels h1, .newly-added h1{
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.bestsellers h1 span, .novels h1 span, .newly-added h1 span{
+    font-size: 2.8rem;
+    font-weight: 800;
+    padding: .5rem 1.8rem;
+    color: var(--black);
+    background: #fff;
+    border-radius: var(--radius-md);
+    border-inline-start: .45rem solid var(--apple);
+    box-shadow: var(--box-shadow);
+    display: inline-block;
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+    border: var(--border);
+    height: 4.4rem;
+    width: 4.4rem;
+    color: var(--black);
+    background: rgba(255, 255, 255, .95);
+    border-radius: 50%;
+    box-shadow: 0 .4rem 1.4rem rgba(0, 0, 0, .14);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover{
+    background: var(--apple);
+    border-color: var(--apple);
+    color: #fff;
+    transform: scale(1.08);
+}
+
+/* media queries */
+
+@media (max-width:991px){
+
+    section{
+        padding: 3rem 2rem;
+    }
+}
+
+@media (max-width:768px){
+
+    .home .row .content{
+        text-align: center;
+    }
+}

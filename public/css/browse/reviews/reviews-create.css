@@ -1,0 +1,18 @@
+.header .header-2 .navigation-bar .header-shop{
+    border-bottom: .2rem solid #fff;
+}
+
+.bottom-navigation .bottom-navigation-shop{
+    border-bottom: .4rem solid #fff;
+}
+
+.create-review {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 3rem 4%;
+}
+
+
+

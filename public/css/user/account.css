@@ -1,0 +1,294 @@
+.account{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 3rem 4%;
+}
+
+.account .tabs-container{
+    flex: 25%;
+    padding: 1rem;
+}
+
+.account .content-container{
+    flex: 75%;
+    padding: 1rem;
+}
+
+/* tabs container */
+
+.account .tabs-container{
+    background: #fff;
+    border: var(--border);
+    border-radius: var(--radius-lg);
+    padding: 2rem 1.6rem;
+    box-shadow: var(--box-shadow);
+}
+
+.account .tabs-container div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    overflow: hidden;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: var(--border);
+}
+
+.account .tabs-container div h3{
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--black);
+}
+
+.account .tabs-container a{
+    color: var(--black);
+    font-size: 1.75rem;
+    font-weight: 600;
+    width: 100%;
+    padding: .9rem 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: .9rem;
+    margin: .4rem 0;
+    border-radius: var(--radius-md);
+}
+
+.account .tabs-container a i{
+    color: var(--apple);
+    width: 2.2rem;
+    text-align: center;
+}
+
+.account .tabs-container a:hover {
+    background: var(--apple-soft);
+    color: var(--apple);
+}
+
+.account .tabs-container a.active {
+    color: #fff;
+    background: linear-gradient(135deg, var(--dark-apple), var(--apple));
+    border-radius: var(--radius-md);
+    box-shadow: 0 .4rem 1.2rem var(--apple-glow);
+}
+
+.account .tabs-container a.active i{
+    color: #fff;
+}
+
+/* orders */
+.account .content-container .orders{
+    background: #fff;
+    border: var(--border);
+    padding: 2.2rem;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--radius-lg);
+    overflow-x: auto;
+}
+
+.account .content-container .orders h3{
+    font-size: 2.6rem;
+    color: var(--black);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.account .content-container .orders table,
+.account .content-container .orders th,
+.account .content-container .orders td{
+    border: var(--border);
+    border-collapse: collapse;
+    color: var(--black);
+    font-size: 1.75rem;
+    padding: 1.1rem 1rem;
+}
+
+.account .content-container .orders table th {
+    background: linear-gradient(135deg, var(--dark-apple), var(--apple));
+    color: white;
+}
+
+.account .content-container .orders table tr:nth-child(even){
+    background-color: #f8f9fc;
+}
+
+.account .content-container .orders table tr:hover{
+    background-color: #f1f3f8;
+}
+
+.account .content-container .orders td a{
+    color: var(--black);
+    text-decoration: none;
+}
+
+.account .content-container .orders td a:hover i{
+    color: var(--apple);
+    transform: scale(1.15);
+}
+
+.account .content-container .orders table{
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+}
+
+/* no orders */
+
+.account .content-container .orders .no-orders{
+    font-size: 2.3rem;
+    color: var(--black);
+    text-align: center;
+    margin: 4rem 0;
+}
+
+.account .content-container .orders .no-orders a{
+    color: var(--apple);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.account .content-container .orders .no-orders i{
+    font-size: 7rem;
+    color: var(--apple);
+    margin-bottom: 1.5rem;
+}
+
+/* navigator */
+
+.account .content-container .orders .navigator-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: .7rem;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.account .content-container .orders .navigator-container a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex: 0 0 4.2rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    border: var(--border);
+    height: 4.2rem;
+    width: 4.2rem;
+    color: var(--black);
+    background: #fff;
+    border-radius: var(--radius-md);
+    box-shadow: var(--box-shadow);
+}
+
+.account .content-container .orders .navigator-container a:hover{
+    background: var(--apple);
+    border-color: var(--apple);
+    color: #fff;
+}
+
+.account .content-container .orders .navigator-container a.active{
+    background: var(--apple);
+    border-color: var(--apple);
+    color: #fff;
+}
+
+/* order details */
+
+.account .content-container .order-details{
+    background: #fff;
+    border: var(--border);
+    padding: 2.2rem;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--radius-lg);
+    overflow-x: auto;
+}
+
+.account .content-container .order-details h3{
+    font-size: 2.6rem;
+    color: var(--black);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.account .content-container .order-details h3 span{
+    color: var(--apple);
+}
+
+.account .content-container .order-details table,
+.account .content-container .order-details th,
+.account .content-container .order-details td{
+    border: var(--border);
+    border-collapse: collapse;
+    color: var(--black);
+    font-size: 1.75rem;
+    padding: 1.1rem 1rem;
+}
+
+.account .content-container .order-details table th {
+    background: linear-gradient(135deg, var(--dark-apple), var(--apple));
+    color: white;
+}
+
+.account .content-container .order-details table tr:nth-child(even){
+    background-color: #f8f9fc;
+}
+
+.account .content-container .order-details table{
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+}
+
+/* media queries */
+@media (max-width:991px){
+
+    section{
+        padding: 3rem 2rem;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .account .content-container,
+    .account .tabs-container {
+        flex: 100%;
+    }
+
+    .account .tabs-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: .5rem;
+        margin-bottom: 1rem;
+    }
+
+    .account .tabs-container div{
+        flex: 100%;
+    }
+
+    .account .tabs-container a{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1 1 22%;
+        text-align: center;
+        height: 8.5rem;
+        padding: .8rem;
+    }
+
+    .account .tabs-container a span{
+        display: block;
+        font-size: 1.45rem;
+    }
+
+}

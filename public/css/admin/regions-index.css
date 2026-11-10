@@ -1,0 +1,79 @@
+.header .header-2 .navigation-bar .header-regions{
+    border-bottom: .3rem solid #fff;
+}
+
+.bottom-navigation .bottom-navigation-regions{
+    border-bottom: .4rem solid #fff;
+}
+
+.regions{
+    padding: 3rem 4%;
+}
+
+/* regions container */
+
+.regions .content-container .regions-container{
+    background: #fff;
+    border: var(--border);
+    padding: 2.2rem;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--radius-lg);
+    overflow-x: auto;
+}
+
+.regions .content-container .regions-container h3{
+    font-size: 2.6rem;
+    color: var(--black);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.regions .content-container .regions-container table,
+.regions .content-container .regions-container th,
+.regions .content-container .regions-container td{
+    border: var(--border);
+    border-collapse: collapse;
+    color: var(--black);
+    font-size: 1.75rem;
+    padding: 1.1rem 1rem;
+}
+
+.regions .content-container .regions-container table th {
+    background: linear-gradient(135deg, var(--dark-apple), var(--apple));
+    color: white;
+}
+
+.regions .content-container .regions-container table tr:nth-child(even){
+    background-color: #f8f9fc;
+}
+
+.regions .content-container .regions-container table tr:hover{
+    background-color: #f1f3f8;
+}
+
+.regions .content-container .regions-container td i{
+    cursor: pointer;
+}
+
+.regions .content-container .regions-container td i:hover{
+    color: var(--apple);
+    transform: scale(1.15);
+}
+
+.regions .content-container .regions-container table{
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+}
+
+/* media queries */
+
+@media (max-width:991px){
+
+    section{
+        padding: 3rem 2rem;
+    }
+
+}

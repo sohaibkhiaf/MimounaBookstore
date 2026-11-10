@@ -1,0 +1,141 @@
+.header .header-2 .navigation-bar .header-orders{
+    border-bottom: .3rem solid #fff;
+}
+
+.bottom-navigation .bottom-navigation-orders{
+    border-bottom: .4rem solid #fff;
+}
+
+.details{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 3rem 4%;
+}
+
+.details .tabs-container{
+    flex: 25%;
+    background: #fff;
+    border: var(--border);
+    border-radius: var(--radius-lg);
+    padding: 2rem 1.6rem;
+    box-shadow: var(--box-shadow);
+}
+
+.details .content-container{
+    flex: 75%;
+    padding: 0 1rem;
+}
+
+/* tabs container */
+
+.details .tabs-container h3{
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--black);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: var(--border);
+}
+
+.details .tabs-container a{
+    color: var(--black);
+    font-size: 1.75rem;
+    font-weight: 600;
+    width: 100%;
+    padding: .85rem 1.1rem;
+    display: block;
+    margin: .4rem 0;
+    border-radius: var(--radius-md);
+}
+
+.details .tabs-container a i{
+    color: var(--apple);
+}
+
+.details .tabs-container a:hover {
+    background: var(--apple-soft);
+    color: var(--apple);
+}
+
+.details .tabs-container a.active {
+    color: #fff;
+    background: linear-gradient(135deg, var(--dark-apple), var(--apple));
+    border-radius: var(--radius-md);
+    box-shadow: 0 .4rem 1.2rem var(--apple-glow);
+}
+
+.details .tabs-container a.active i{
+    color: #fff;
+}
+
+.details .tabs-container .edit-order-button i,
+.details .tabs-container .delete-order-button i{
+    font-size: 1.6rem;
+}
+
+/* content */
+
+.details .content-container .order-details{
+    background: #fff;
+    border: var(--border);
+    padding: 2.2rem;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--radius-lg);
+    overflow-x: auto;
+}
+
+.details .content-container .order-details h3{
+    font-size: 2.6rem;
+    color: var(--black);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.details .content-container .order-details table,
+.details .content-container .order-details th,
+.details .content-container .order-details td{
+    border: var(--border);
+    border-collapse: collapse;
+    color: var(--black);
+    font-size: 1.75rem;
+    padding: 1.1rem 1rem;
+}
+
+.details .content-container .order-details table th {
+    background: linear-gradient(135deg, var(--dark-apple), var(--apple));
+    color: white;
+}
+
+.details .content-container .order-details table tr:nth-child(even){
+    background-color: #f8f9fc;
+}
+
+.details .content-container .order-details table{
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+}
+
+/* media queries */
+
+@media (max-width:991px){
+
+    section{
+        padding: 3rem 2rem;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .details .content-container,
+    .details .tabs-container {
+        flex: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+}

@@ -1,0 +1,120 @@
+.account-information {
+    background: #fff;
+    border: var(--border);
+    padding: 2.8rem;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--radius-lg);
+}
+
+.account-information form h3{
+    font-size: 2.6rem;
+    color: var(--black);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.account-information form span{
+    display: block;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: var(--light-black);
+    padding: 1.2rem 0 .4rem 0;
+}
+
+.account-information form .box{
+    width: 100%;
+    font-size: 1.75rem;
+    background: var(--surface-alt);
+    border: var(--border);
+    border-radius: var(--radius-md);
+    padding: 1rem 1.4rem;
+    color: var(--black);
+    text-transform: none;
+}
+
+.account-information form .box:disabled{
+    background: #f5f6f9;
+    color: var(--light-black);
+    cursor: default;
+}
+
+.account-information form .error{
+    color: var(--apple);
+    font-size: 1.55rem;
+    margin-top: .3rem;
+}
+
+.account-information form .edit-button{
+    text-align: center;
+    width: 100%;
+    margin-top: 2.4rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    border-radius: var(--radius-md);
+    color: #fff;
+    background: var(--apple);
+    font-size: 1.8rem;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 .4rem 1.2rem var(--apple-glow);
+}
+
+.account-information form .edit-button:hover{
+    background: var(--dark-apple);
+    transform: translateY(-.2rem);
+}
+
+.account-information form select{
+    font-size: 1.75rem;
+    background: var(--surface-alt);
+    border: var(--border);
+    border-radius: var(--radius-md);
+    padding: 1rem 1.4rem;
+    width: 100%;
+    color: var(--black);
+}
+
+.account-information form .buttons-container{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    text-align: center;
+    margin-top: 2.4rem;
+}
+
+.account-information form .buttons-container .save-button{
+    flex: 50%;
+    display: inline-block;
+    padding: 1rem 3rem;
+    border-radius: var(--radius-md);
+    color: #fff;
+    background: var(--apple);
+    font-size: 1.8rem;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 .4rem 1.2rem var(--apple-glow);
+}
+
+.account-information form .buttons-container .save-button:hover{
+    background: var(--dark-apple);
+    transform: translateY(-.2rem);
+}
+
+.account-information form .buttons-container .cancel-button{
+    flex: 50%;
+    background-color: var(--surface-alt);
+    border: var(--border);
+    color: var(--black);
+    display: inline-block;
+    padding: 1rem 3rem;
+    border-radius: var(--radius-md);
+    font-size: 1.8rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.account-information form .buttons-container .cancel-button:hover{
+    background-color: #e2e6ee;
+}

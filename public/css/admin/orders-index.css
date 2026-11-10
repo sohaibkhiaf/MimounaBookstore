@@ -1,0 +1,93 @@
+.header .header-2 .navigation-bar .header-orders{
+    border-bottom: .3rem solid #fff;
+}
+
+.bottom-navigation .bottom-navigation-orders{
+    border-bottom: .4rem solid #fff;
+}
+
+/* orders */
+
+.orders{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 3rem 4%;
+}
+
+.orders .tabs-container{
+    flex: 25%;
+    background: #fff;
+    border: var(--border);
+    border-radius: var(--radius-lg);
+    padding: 2rem 1.6rem;
+    box-shadow: var(--box-shadow);
+}
+
+.orders .content-container{
+    flex: 75%;
+    padding: 0 1rem;
+}
+
+/* tabs */
+
+.orders .tabs-container h3{
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--black);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: var(--border);
+}
+
+.orders .tabs-container a{
+    color: var(--black);
+    font-size: 1.75rem;
+    font-weight: 600;
+    width: 100%;
+    padding: .85rem 1.1rem;
+    display: block;
+    margin: .4rem 0;
+    border-radius: var(--radius-md);
+}
+
+.orders .tabs-container a i{
+    color: var(--apple);
+}
+
+.orders .tabs-container a:hover{
+    background: var(--apple-soft);
+    color: var(--apple);
+}
+
+.orders .tabs-container a.active {
+    color: #fff;
+    background: linear-gradient(135deg, var(--dark-apple), var(--apple));
+    border-radius: var(--radius-md);
+    box-shadow: 0 .4rem 1.2rem var(--apple-glow);
+}
+
+.orders .tabs-container a.active i{
+    color: #fff;
+}
+
+/* media queries */
+
+@media (max-width:991px){
+
+    section{
+        padding: 3rem 2rem;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .orders .content-container,
+    .orders .tabs-container {
+        flex: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+}

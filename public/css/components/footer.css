@@ -1,0 +1,85 @@
+.footer{
+    margin-top: auto;
+    padding: 4.5rem 4% 2.5rem 4%;
+    background: #fff;
+    border-top: var(--border);
+    box-shadow: 0 -.4rem 2rem rgba(15, 23, 42, .03);
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(24rem , 1fr));
+    gap: 2.5rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 2.2rem;
+    color: var(--black);
+    padding: .8rem 0 1.2rem 0;
+    position: relative;
+}
+
+.footer .box-container .box a{
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    font-size: 1.7rem;
+    color: var(--light-black);
+    padding: .7rem 0;
+}
+
+.footer .box-container .box a i{
+    color: var(--apple);
+    font-size: 1.6rem;
+    transition: transform .2s ease;
+}
+
+.footer .box-container .box a:hover{
+    color: var(--apple);
+    transform: translateX(-.4rem);
+}
+
+html[dir="ltr"] .footer .box-container .box a:hover{
+    transform: translateX(.4rem);
+}
+
+.footer .share{
+    padding: 2.5rem 0 1rem 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .8rem;
+}
+
+.footer .share a{
+    height: 4.4rem;
+    width: 4.4rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    color: #fff;
+    background: var(--apple);
+    border-radius: 50%;
+    box-shadow: 0 .4rem 1rem var(--apple-glow);
+}
+
+.footer .share a:hover{
+    background: var(--black);
+    transform: translateY(-.3rem) scale(1.06);
+}
+
+.footer .credit{
+    border-top: var(--border);
+    margin-top: 2rem;
+    padding: 1.8rem 1rem 0 1rem;
+    font-size: 1.65rem;
+    color: var(--light-black);
+    text-align: center;
+}
+
+.footer .credit span{
+    color: var(--apple);
+    font-weight: 700;
+}

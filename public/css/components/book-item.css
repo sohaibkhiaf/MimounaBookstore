@@ -1,0 +1,119 @@
+.book-item{
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    border: var(--border);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.book-item:hover{
+    cursor: pointer;
+    transform: translateY(-.6rem);
+    box-shadow: var(--box-shadow-hover);
+    border-color: rgba(168, 31, 35, .28);
+}
+
+.book-item .image{
+    padding: 1.8rem 1.4rem 1.2rem 1.4rem;
+    background: linear-gradient(180deg, #fafbfc 0%, #f1f3f8 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.book-item .image img{
+    height: 17rem;
+    width: 15rem;
+    object-fit: contain;
+    filter: drop-shadow(0 .6rem 1.2rem rgba(0, 0, 0, .14));
+    transition: transform .35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.book-item:hover .image img{
+    transform: scale(1.06);
+}
+
+.book-item .like{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 2;
+}
+
+.book-item .like a{
+    width: 3.8rem;
+    height: 3.8rem;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .92);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 .4rem 1rem rgba(0, 0, 0, .1);
+    color: var(--black);
+    font-size: 1.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.book-item .like a:hover,
+.book-item .like a.active{
+    color: var(--apple);
+    transform: scale(1.12);
+    background: #fff;
+}
+
+.book-item .content{
+    padding: 1.4rem 1.4rem 1.6rem 1.4rem;
+    background: #fff;
+}
+
+.book-item .content h3{
+    font-size: 1.85rem;
+    font-weight: 700;
+    color: var(--black);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: .4rem;
+}
+
+.book-item .content .price{
+    font-size: 1.95rem;
+    font-weight: 800;
+    color: var(--apple);
+    margin-bottom: .8rem;
+}
+
+.book-item .content .price span{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--light-black);
+    text-decoration: line-through;
+    margin-inline-start: .4rem;
+}
+
+.book-item .content .add-to-cart{
+    padding: .75rem 1.8rem;
+    margin-top: .4rem;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .6rem;
+    border-radius: var(--radius-md);
+    color: #fff;
+    background: var(--apple);
+    font-size: 1.65rem;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 .4rem 1.2rem rgba(168, 31, 35, .18);
+}
+
+.book-item .content .add-to-cart:hover{
+    background: var(--dark-apple);
+    transform: translateY(-.15rem);
+}

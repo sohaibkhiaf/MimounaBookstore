@@ -1,0 +1,98 @@
+.header .header-1 .icons .wishlist-icon{
+    color: #fff;
+    background: var(--apple);
+}
+
+.wishlist-books{
+    padding: 3rem 4%;
+}
+
+.wishlist-books .wishlist-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(21rem , 1fr));
+    gap: 1.8rem;
+}
+
+/* navigator */
+
+.navigator{
+    padding: 2rem 4% 4rem 4%;
+}
+
+.navigator .navigator-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: .7rem;
+    padding: 1rem 0;
+    margin-top: 1.5rem;
+}
+
+.navigator .navigator-container a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex: 0 0 4.2rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    border: var(--border);
+    height: 4.2rem;
+    width: 4.2rem;
+    color: var(--black);
+    background: #fff;
+    border-radius: var(--radius-md);
+    box-shadow: var(--box-shadow);
+}
+
+.navigator .navigator-container a:hover{
+    background: var(--apple);
+    border-color: var(--apple);
+    color: #fff;
+    transform: translateY(-.2rem);
+}
+
+.navigator .navigator-container a.active{
+    background: var(--apple);
+    border-color: var(--apple);
+    color: #fff;
+    box-shadow: 0 .4rem 1.2rem var(--apple-glow);
+}
+
+/* no results message */
+
+.navigator .navigator-container .no-results{
+    font-size: 2.3rem;
+    color: var(--black);
+    text-align: center;
+    margin-bottom: 4rem;
+    background: #fff;
+    border: var(--border);
+    border-radius: var(--radius-lg);
+    padding: 4.5rem 3rem;
+    box-shadow: var(--box-shadow);
+    width: 100%;
+}
+
+.navigator .navigator-container .no-results i{
+    font-size: 7rem;
+    color: var(--apple);
+    margin-bottom: 1.5rem;
+}
+
+/* media queries */
+
+@media (max-width:991px){
+
+    section{
+        padding: 3rem 2rem;
+    }
+}
+
+@media (max-width:768px){
+
+    .wishlist-books .wishlist-container{
+        grid-template-columns: repeat(auto-fill , minmax(18rem, 1fr));
+    }
+}

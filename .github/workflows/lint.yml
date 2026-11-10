@@ -1,0 +1,92 @@
+name: Lint & Code Style Checks
+
+on:
+  push:
+    branches: [ "**" ]
+  pull_request:
+    branches: [ "**" ]
+
+jobs:
+  # ---------------------------------------------------------------------------
+  # 1. PHP / Laravel (Syntax Check & Laravel Pint)
+  # ---------------------------------------------------------------------------
+  php-lint:
+    name: PHP (Laravel) Lint
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+          extensions: mbstring, xml, ctype, iconv, intl, pdo_sqlite, pdo_mysql, bcmath, curl
+          coverage: none
+
+      - name: Validate composer.json
+        run: composer validate --strict
+
+      - name: Cache Composer Dependencies
+        uses: actions/cache@v4
+        with:
+          path: vendor
+          key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-composer-
+
+      - name: Install Composer Dependencies
+        run: composer install --prefer-dist --no-progress --no-interaction
+
+      - name: Check PHP Syntax (Lint)
+        run: |
+          echo "Checking PHP syntax for syntax/parse errors..."
+          find app config database routes tests -name "*.php" -exec php -l {} +
+
+      - name: Check Code Style (Laravel Pint)
+        run: ./vendor/bin/pint --test
+
+  # ---------------------------------------------------------------------------
+  # 2. Python (AI Assistant - Ruff Lint & Syntax)
+  # ---------------------------------------------------------------------------
+  python-lint:
+    name: Python (AI Assistant) Lint
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Ruff
+        run: pip install ruff
+
+      - name: Run Ruff (Syntax & Linting)
+        run: ruff check ai_assistant/
+
+  # ---------------------------------------------------------------------------
+  # 3. JavaScript (ESLint & Syntax Check)
+  # ---------------------------------------------------------------------------
+  javascript-lint:
+    name: JavaScript Lint
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Dependencies
+        run: npm install --no-audit --no-fund
+
+      - name: Run ESLint
+        run: npm run lint:js

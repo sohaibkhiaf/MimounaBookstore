@@ -1,0 +1,62 @@
+# ==============================================================================
+# AI Assistant Microservice (Runs in a separate container)
+# ==============================================================================
+ai_assistant
+ai_assistant/
+/ai_assistant/**
+
+# ==============================================================================
+# Version Control & IDE Configuration
+# ==============================================================================
+.git
+.gitignore
+.gitattributes
+.editorconfig
+.idea
+.vscode
+.fleet
+.phpactor.json
+
+# ==============================================================================
+# Dependencies & Build Artifacts (Installed inside container)
+# ==============================================================================
+/vendor
+/node_modules
+/public/build
+/public/hot
+/public/storage
+
+# ==============================================================================
+# Local Environment & Secrets
+# ==============================================================================
+.env
+.env.*
+!.env.example
+auth.json
+Homestead.json
+Homestead.yaml
+
+# ==============================================================================
+# Runtime Logs, Caches & Temporary Files
+# ==============================================================================
+/storage/logs/*.log
+/storage/framework/cache/data/*
+/storage/framework/sessions/*
+/storage/framework/views/*.php
+/storage/*.key
+/bootstrap/cache/*.php
+!bootstrap/cache/.gitignore
+database/*.sqlite
+database/*.sqlite-journal
+database/*.db
+
+# ==============================================================================
+# Testing & Debug Logs
+# ==============================================================================
+/.phpunit.cache
+.phpunit.result.cache
+npm-debug.log
+yarn-error.log
+Dockerfile
+.dockerignore
+docker-compose*.yml
